@@ -1,0 +1,309 @@
+/* ==========================================
+        ADD TRANSACTION PAGE
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+        RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FBF8F6;
+    color:#3A2E34;
+}
+
+/* ==========================
+        VARIABLES
+========================== */
+
+:root{
+
+    --primary:#D78FA6;
+    --primary-dark:#BF6F89;
+    --text:#3A2E34;
+    --text-light:#7A6B72;
+    --border:#E8DDDD;
+    --shadow:0 12px 35px rgba(122,90,105,.10);
+
+}
+
+/* ==========================
+    DASHBOARD CONTAINER
+========================== */
+
+.dashboard-container{
+
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+
+}
+
+/* ==========================
+        HEADER
+========================== */
+
+.dashboard-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#ffffff;
+
+    padding:20px 35px;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:50px;
+
+}
+
+/* ==========================
+        LOGO
+========================== */
+
+.logo{
+
+    font-size:30px;
+    font-weight:700;
+    color:var(--text);
+
+}
+
+.logo span{
+
+    color:var(--primary);
+
+}
+
+/* ==========================
+        BACK BUTTON
+========================== */
+
+.logout-btn{
+
+    text-decoration:none;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    color:#fff;
+
+    padding:12px 24px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================
+        FORM SECTION
+========================== */
+
+.transaction-form-section{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+/* ==========================
+        CARD
+========================== */
+
+.transaction-card{
+
+    width:100%;
+    max-width:700px;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.transaction-card h2{
+
+    text-align:center;
+
+    font-size:32px;
+
+    margin-bottom:35px;
+
+    color:var(--text);
+
+}
+
+/* ==========================
+        INPUT GROUP
+========================== */
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:var(--text);
+
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+    background:#fff;
+
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(215,143,166,.15);
+
+}
+
+/* ==========================
+        BUTTON
+========================== */
+
+.auth-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.auth-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(215,143,166,.25);
+
+}
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .dashboard-header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+    .transaction-card{
+
+        padding:30px;
+
+    }
+
+}
+/* ==========================
+        ALERTS
+========================== */
+
+.alert{
+
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:600;
+
+}
+
+.alert-success{
+
+    background:#EAF8EE;
+    color:#2E7D32;
+    border:1px solid #B7E1C1;
+
+}
+
+.alert-error{
+
+    background:#FFF1F1;
+    color:#C62828;
+    border:1px solid #F5B5B5;
+
+}

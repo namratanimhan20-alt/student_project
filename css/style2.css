@@ -1,0 +1,298 @@
+/* ==========================================
+   ALIGN - Transaction History Page CSS
+========================================== */
+
+
+/* Main Container */
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+
+}
+
+
+
+/* ==========================================
+   Page Header
+========================================== */
+
+
+.page-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    flex-wrap:wrap;
+    gap:15px;
+
+}
+
+
+
+.page-header h1{
+
+    font-size:32px;
+    font-weight:700;
+    color:#2c3e50;
+
+}
+
+
+
+/* ==========================================
+   Add Transaction Button
+========================================== */
+
+
+.add-btn{
+
+    text-decoration:none;
+    background:#2ecc71;
+    color:#ffffff;
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:600;
+    display:inline-block;
+    transition:0.3s;
+
+}
+
+
+.add-btn:hover{
+
+    background:#27ae60;
+
+}
+
+
+
+/* ==========================================
+   Transaction Table
+========================================== */
+
+
+.table-container{
+
+    background:#ffffff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+
+
+thead{
+
+    background:#6c63ff;
+    color:white;
+
+}
+
+
+
+thead th{
+
+    padding:16px;
+    text-align:left;
+    font-weight:600;
+
+}
+
+
+
+tbody td{
+
+    padding:16px;
+    border-bottom:1px solid #ececec;
+    color:#333;
+
+}
+
+
+
+tbody tr:hover{
+
+    background:#f8f9ff;
+
+}
+
+
+
+/* ==========================================
+   Transaction Badges
+========================================== */
+
+
+.badge{
+
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:30px;
+    color:white;
+    font-size:14px;
+    font-weight:600;
+
+}
+
+
+
+.income{
+
+    background:#28a745;
+
+}
+
+
+
+.expense{
+
+    background:#dc3545;
+
+}
+
+
+
+/* ==========================================
+   Amount
+========================================== */
+
+
+.amount{
+
+    font-weight:700;
+    color:#2c3e50;
+
+}
+
+
+
+/* ==========================================
+   Action Buttons
+========================================== */
+
+
+.edit-btn,
+.delete-btn{
+
+    text-decoration:none;
+    color:white;
+    padding:8px 14px;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:500;
+    display:inline-block;
+    margin-right:8px;
+    transition:0.3s;
+
+}
+
+
+
+.edit-btn{
+
+    background:#3498db;
+
+}
+
+
+
+.edit-btn:hover{
+
+    background:#2980b9;
+
+}
+
+
+
+.delete-btn{
+
+    background:#e74c3c;
+
+}
+
+
+
+.delete-btn:hover{
+
+    background:#c0392b;
+
+}
+
+
+
+/* ==========================================
+   Empty Transaction Message
+========================================== */
+
+
+.no-data{
+
+    text-align:center;
+    padding:50px 20px;
+    color:#777;
+    font-size:18px;
+
+}
+
+
+
+/* ==========================================
+   Responsive
+========================================== */
+
+
+@media(max-width:768px){
+
+
+    .page-header{
+
+        flex-direction:column;
+        align-items:flex-start;
+
+    }
+
+
+    .page-header h1{
+
+        font-size:26px;
+
+    }
+
+
+    .table-container{
+
+        overflow-x:auto;
+
+    }
+
+
+    table{
+
+        min-width:700px;
+
+    }
+
+
+    .edit-btn,
+    .delete-btn{
+
+        margin-bottom:8px;
+
+    }
+
+
+}
