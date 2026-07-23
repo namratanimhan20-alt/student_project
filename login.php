@@ -15,6 +15,7 @@ if(isset($_POST['login'])){
 
     if(mysqli_num_rows($result) > 0){
 
+    
         $user = mysqli_fetch_assoc($result);
 
         if(password_verify($password, $user['password'])){
@@ -139,7 +140,7 @@ and financial goals—all in one secure place.
 
 
 
-<img src="images/login-illustration.svg"
+<img src="images/login.png"
 alt="Login Illustration">
 
 

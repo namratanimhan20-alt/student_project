@@ -4,28 +4,37 @@ if(session_status() === PHP_SESSION_NONE){
 }
 ?>
 
-<header class="navbar">
+<header>
+    
+    <div class="navbar">
 
     <div class="logo">
-        ALIGN.
-    </div>
+    ALIGN<span>.</span>
+   </div>
 
-    <nav>
+    <nav class="nav-links">
 
-        <a href="/student_project/dashboard.php">
-            Dashboard
-        </a>
+    <a href="/student_project/dashboard.php">
+        Dashboard
+    </a>
 
-        <a href="/student_project/transaction.php">
-            Transactions
-        </a>
+    <a href="/student_project/transaction.php">
+        Transactions
+    </a>
 
-        <a href="/student_project/add_transaction.php">
-            Add Transaction
-        </a>
+    <a href="/student_project/add_transaction.php">
+        Add Transaction
+    </a>
 
-    </nav>
+    <a href="/student_project/analytics.php">
+        Analytics
+    </a>
 
+    <a href="/student_project/profile.php">
+        Profile
+    </a>
+
+</nav>
 
     <div class="profile">
 

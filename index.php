@@ -121,7 +121,7 @@
 
             <div class="hero-image fade-in">
 
-                <img src="images/dashboard.jpg"
+                <img src="images/dashboard.png"
                     alt="Align Dashboard Preview">
 
             </div>
@@ -551,7 +551,7 @@
 
             <div class="dashboard-image fade-in">
 
-                <img src="images/dashboard-preview.png"
+                <img src="images/dashboard.png"
                     alt="Align Dashboard">
 
             </div>
@@ -914,10 +914,9 @@
 
                 © 2026 Align. All Rights Reserved.
 
-                <br><br>
+        
 
-                Built with ❤️ using
-                PHP • MySQL • HTML • CSS • JavaScript
+               
 
             </p>
 

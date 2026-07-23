@@ -51,8 +51,10 @@ if(isset($_POST['save_transaction'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Add Transaction | Align</title>
-
-    <link rel="stylesheet" href="add_style1.css">
+   
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="add_style1.css">
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">

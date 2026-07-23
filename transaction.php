@@ -38,7 +38,8 @@ $result = mysqli_query($conn,$query);
 
 <title>Transactions</title>
 
-<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/style2.css">
 
 </head>

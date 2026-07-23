@@ -89,12 +89,6 @@ header{
 
     width:100%;
 
-    position:fixed;
-    top:0;
-    left:0;
-
-    z-index:999;
-
     background:rgba(255,255,255,.88);
 
     backdrop-filter:blur(18px);
@@ -105,12 +99,17 @@ header{
         0 8px 30px rgba(0,0,0,.04);
 
 }
-
 /* ==========================================
                 NAVBAR
 ========================================== */
 
 .navbar{
+
+    width:90%;
+
+    max-width:1250px;
+
+    margin:auto;
 
     display:flex;
 
@@ -2025,4 +2024,31 @@ button{
     width:100%;
     top:auto;
     left:auto;
+}
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.profile a{
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    font-weight:500;
+
+}
+
+
+.profile span{
+
+    font-size:22px;
+
 }
